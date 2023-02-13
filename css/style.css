@@ -76,5 +76,82 @@ img{
 }
 
 
+/* MAIN */
 
+/* section1 */
+
+.section1{
+    max-width: 1000px;
+    margin: 50px auto;
+    background-color: rgb(100, 0, 223);
+    height:800px;
+}
+
+.section1-titolo{
+height: 100px;
+background-color: rgb(128, 0, 92);
+border: 1px solid black;
+}
+
+.row{
+    justify-content: center;
+    /* max-width: 1000px; */
+    background-color:green;
+    height: 600px;
+    gap: 20px;
+    align-items: center;
+   }
+
+.col{
+    height: 500px;
+    background-color: pink;
+    width: calc(1000px / 3 );
+    border:1px solid black;
+}
+
+.section1-bottom{
+
+    height: 100px;
+    background-color: aquamarine;
+    border:1px solid black
+
+}
+
+
+/* section2 */
+
+.section2{
+    max-width: 1000px;
+    margin: 50px auto;
+    background-color: brown;
+    height: 500px;
+    
+}
+
+.section2-main{
+    height: 400px;
+    background-color: cornflowerblue;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.section2-image{
+    width: 30%;
+    background-color: pink;
+    border: 1px solid black;
+    height:300px;
+}
+
+.section2-text{
+    width: 50%;
+    background-color: pink;
+    border: 1px solid black;
+    height: 300px;
+}
+
+.section2-title{
+    background-color: blue;
+    margin-left: 100px;
+}
 
