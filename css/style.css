@@ -9,47 +9,81 @@ img{
     max-width: 100%;
 }
 
+
+/* FONT */
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
 /* UTILITIES */
 
 .flex{
     display: flex;
 }
 
+/* GENERAL */
+ul{
+    list-style: none;
+}
 
 
 
 /* HEADER */
 
+header{
+    position: relative;
+    
+}
+
 /* main nav header */
-.main-nav{
-    justify-content: space-between;
-    /* debug */
+    .main-nav{
+    background-color: white;
     height: 50px;
-    background-color: orangered;
+    width: 100%;
+    justify-content: space-between;
+    line-height: 50px;
+    text-align: center;
+    position: fixed;
+    z-index: 100;
   }
 
+/* left part header */
 .left-part{
-    width: 30%;
-     /* debug */
-    height: 50px;
-    background-color:greenyellow;
-    border:1px solid black;
+    width: 40%; 
+}
+
+.ul-left{
+    gap: 15px;
+}
+
+.logo-small{
+    padding-top: 11px;
 }
 
 .right-part{
-    width: 30%;
-     /* debug */
-    height:50px;
-    background-color: greenyellow;
-    border:1px solid black;
+    width: 40%;
+   } 
+
+.ul-right{
+    gap:15px;
+    justify-content: right;
 }
 
+.btn{
+    background-color: rgb(55, 55, 246);
+    border: none;
+    padding:6px;
+    color: white;
+    margin-right: 5px;
 
+}
 
 /* jumbotron */
 
 .jumbotron{
+    padding-top:50px;
     height: 400px;
+
     background-color: rgb(70, 70, 181);
     border:1px solid black;
     text-align: center;
@@ -70,7 +104,7 @@ img{
 
 .jumbotron-img{
     width:40%;
-    height:300px;
+    /* height:300px; */
     background-color:pink;
     border:1px solid black;
 }
@@ -124,12 +158,12 @@ border: 1px solid black;
     max-width: 1000px;
     margin: 50px auto;
     background-color: brown;
-    height: 500px;
+    height: 600px;
     
 }
 
 .section2-main{
-    height: 400px;
+    /* height: 500px; */
     background-color: cornflowerblue;
     align-items: center;
     justify-content: center;
@@ -137,22 +171,27 @@ border: 1px solid black;
 }
 
 .section2-image{
-    width: 30%;
+    width: 60%;
     background-color: pink;
     border: 1px solid black;
     height:300px;
 }
 
 .section2-text{
-    width: 50%;
+    width: 40%;
     background-color: pink;
     border: 1px solid black;
     height: 300px;
+    padding-top: 50px;
+    justify-content: bottom;
+ 
 }
 
 .section2-title{
+    width: 100%;
     background-color: blue;
     margin-left: 100px;
+    height: 50px;
 }
 
 /* section3 */
