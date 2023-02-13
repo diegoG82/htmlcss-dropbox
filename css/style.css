@@ -26,6 +26,10 @@ ul{
     list-style: none;
 }
 
+h1{
+    font-size: 3.3rem;
+}
+
 
 
 /* HEADER */
@@ -71,7 +75,8 @@ header{
 
 .btn{
     background-color: rgb(55, 55, 246);
-    border: none;
+    /* font-size: 1rem; */
+    border-style: hidden;
     padding:6px;
     color: white;
     margin-right: 5px;
@@ -81,32 +86,53 @@ header{
 /* jumbotron */
 
 .jumbotron{
+    /* width: 1100px; */
     padding-top:50px;
-    height: 400px;
-
-    background-color: rgb(70, 70, 181);
-    border:1px solid black;
-    text-align: center;
+    height: 600px;
+    margin: 0 auto;
+    background-color: rgb(125, 202, 240);
+        /* border:1px solid black; */
+    /* text-align: center; */
 }
 
 .jumbotron-container{
     justify-content: center;
+    line-height: center;
+    padding-top: 20px;
+    /* border: 1px solid black; */
  }
 
+ .jumbotron-title{
+    padding-top: 20px;
+    /* height: 200px; */
+    width: 60%;
+    margin: 0 auto;
+    /* border:1px solid black;  */
+ 
+ }
 
 .jumbotron-testo{
-    width: 20%;
-    height: 300px;
-    background-color: darkgreen;
-    border:1px solid black;
+    width: 15%;
+    font-size: 0.8rem;
+    height: 380px;
+    padding-right: 15px;
+    
+        /* border:1px solid black; */
+}
+
+.arrow{
+    padding-top:70px;
+    font-size:2rem;
 }
 
 
 .jumbotron-img{
-    width:40%;
-    /* height:300px; */
-    background-color:pink;
-    border:1px solid black;
+    width:45%;
+    height:400px;
+    background-image: url(../img/jumbo.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 
@@ -115,22 +141,23 @@ header{
 /* section1 */
 
 .section1{
-    max-width: 1000px;
-    margin: 50px auto;
-    background-color: rgb(100, 0, 223);
+    max-width: 55%;
+    margin:100px auto;
     height:800px;
 }
 
 .section1-titolo{
 height: 100px;
-background-color: rgb(128, 0, 92);
 border: 1px solid black;
 }
+.section1-maintitle{
+    padding-bottom: 30px;
+
+}
+
 
 .row{
     justify-content: center;
-    /* max-width: 1000px; */
-    background-color:green;
     height: 600px;
     gap: 20px;
     align-items: center;
@@ -138,9 +165,14 @@ border: 1px solid black;
 
 .col{
     height: 500px;
-    background-color: pink;
+        /* background-color: pink; */
     width: calc(1000px / 3 );
     border:1px solid black;
+}
+
+.colhead{
+    margin-left: 80px ;
+    font-size: 0.7rem;
 }
 
 .section1-bottom{
@@ -155,7 +187,7 @@ border: 1px solid black;
 /* section2 */
 
 .section2{
-    max-width: 1000px;
+    max-width: 55%;
     margin: 50px auto;
     background-color: brown;
     height: 600px;
@@ -188,23 +220,24 @@ border: 1px solid black;
 }
 
 .section2-title{
-    width: 100%;
-    background-color: blue;
-    margin-left: 100px;
+    /* width: 100%; */
+        /* background-color: blue; */
+    /* margin-left: 100px; */
     height: 50px;
+    margin-bottom:auto   20px;
 }
 
 /* section3 */
 
 .section3{
-    width: 1000px;
+    width: 55%;
     margin:50px auto;
     background-color: chocolate;
     height: 800px;
 }
 
 .row3{
-    justify-content: center;
+    /* justify-content: center; */
     max-width: 1000px;
     background-color:green;
     /* height: 1000px; */
