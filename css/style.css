@@ -9,6 +9,72 @@ img{
     max-width: 100%;
 }
 
+/* UTILITIES */
+
+.flex{
+    display: flex;
+}
+
+
+
+
+/* HEADER */
+
+/* main nav header */
+.main-nav{
+    justify-content: space-between;
+    /* debug */
+    height: 50px;
+    background-color: orangered;
+  }
+
+.left-part{
+    width: 30%;
+     /* debug */
+    height: 50px;
+    background-color:greenyellow;
+    border:1px solid black;
+}
+
+.right-part{
+    width: 30%;
+     /* debug */
+    height:50px;
+    background-color: greenyellow;
+    border:1px solid black;
+}
+
+
+
+/* jumbotron */
+
+.jumbotron{
+    height: 400px;
+    background-color: rgb(70, 70, 181);
+    border:1px solid black;
+    text-align: center;
+}
+
+.jumbotron-container{
+    justify-content: center;
+ }
+
+
+.jumbotron-testo{
+    width: 20%;
+    height: 300px;
+    background-color: darkgreen;
+    border:1px solid black;
+}
+
+
+.jumbotron-img{
+    width:40%;
+    height:300px;
+    background-color:pink;
+    border:1px solid black;
+}
+
 
 
 
