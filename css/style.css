@@ -10,9 +10,10 @@ img{
 }
 
 
-/* FONT */
+/* FONT e BACKGROUND body */
 body{
     font-family: 'Open Sans', sans-serif;
+    background-color: white;
 }
 
 /* UTILITIES */
@@ -31,15 +32,13 @@ h1{
 }
 
 
-
 /* HEADER */
 
 header{
     position: relative;
-    
-}
+    }
 
-/* main nav header */
+/* sezione nav */
     .main-nav{
     background-color: white;
     height: 50px;
@@ -49,6 +48,7 @@ header{
     text-align: center;
     position: fixed;
     z-index: 100;
+    font-size: 0.7rem;
   }
 
 /* left part header */
@@ -64,6 +64,7 @@ header{
     padding-top: 11px;
 }
 
+/* right part header */
 .right-part{
     width: 40%;
    } 
@@ -73,42 +74,40 @@ header{
     justify-content: right;
 }
 
-.btn{
+.btn-blu{
     background-color: rgb(55, 55, 246);
-    /* font-size: 1rem; */
     border-style: hidden;
     padding:6px;
     color: white;
     margin-right: 5px;
+}
+
+.btn-neutral{
+    background-color: white;
+    border:2px solid black;
+    padding:2px;
 
 }
 
-/* jumbotron */
+/*  sezione jumbotron */
 
 .jumbotron{
-    /* width: 1100px; */
     padding-top:50px;
     height: 600px;
     margin: 0 auto;
     background-color: rgb(125, 202, 240);
-        /* border:1px solid black; */
-    /* text-align: center; */
 }
 
 .jumbotron-container{
     justify-content: center;
     line-height: center;
     padding-top: 20px;
-    /* border: 1px solid black; */
  }
 
  .jumbotron-title{
     padding-top: 20px;
-    /* height: 200px; */
     width: 60%;
     margin: 0 auto;
-    /* border:1px solid black;  */
- 
  }
 
 .jumbotron-testo{
@@ -116,15 +115,12 @@ header{
     font-size: 0.8rem;
     height: 380px;
     padding-right: 15px;
-    
-        /* border:1px solid black; */
 }
 
 .arrow{
     padding-top:70px;
     font-size:2rem;
 }
-
 
 .jumbotron-img{
     width:45%;
@@ -135,26 +131,24 @@ header{
     background-repeat: no-repeat;
 }
 
-
 /* MAIN */
 
-/* section1 */
+/* section plans */
 
-.section1{
+.plans{
     max-width: 55%;
     margin:100px auto;
     height:800px;
 }
 
-.section1-titolo{
+.plans-titolo{
 height: 100px;
-border: 1px solid black;
+/* border: 1px solid black; */
 }
-.section1-maintitle{
+.plans-maintitle{
     padding-bottom: 30px;
-
+    font-size: 2rem;
 }
-
 
 .row{
     justify-content: center;
@@ -164,149 +158,216 @@ border: 1px solid black;
    }
 
 .col{
-    height: 500px;
-        /* background-color: pink; */
-    width: calc(1000px / 3 );
-    border:1px solid black;
-}
-
-.colhead{
-    margin-left: 80px ;
-    font-size: 0.7rem;
-}
-
-.section1-bottom{
-
-    height: 100px;
-    background-color: aquamarine;
-    border:1px solid black
-
-}
-
-
-/* section2 */
-
-.section2{
-    max-width: 55%;
-    margin: 50px auto;
-    background-color: brown;
     height: 600px;
-    
+    width: calc(100% / 3 );
+    border:1px solid lightgray;
 }
 
-.section2-main{
-    /* height: 500px; */
-    background-color: cornflowerblue;
+.titolo-col{
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    border-bottom: 1px solid lightgray;
+}
+
+.contenuti-col{
+    padding: 10px 20px 50px;
+    font-size: 0.8rem;
+}
+
+.col-bottom{
+    margin-top: 50px;
+    border:1px solid black;
+    font-size: 0.8rem;
+}
+
+.right-col{
+    width:30%;
+    text-align: center;
+}
+
+.left-col{
+    width:70%
+}
+
+
+/* section partners */
+
+.partners{
+    max-width: 55%;
+    margin: 100px auto;   
+}
+
+.partners-main{
     align-items: center;
     justify-content: center;
-
 }
 
-.section2-image{
-    width: 60%;
-    background-color: pink;
-    border: 1px solid black;
-    height:300px;
-}
+.partners-image{
+    width: 60%;   
+    max-width: 1100px;    
+    }
 
-.section2-text{
+.partners-text{
     width: 40%;
-    background-color: pink;
-    border: 1px solid black;
-    height: 300px;
-    padding-top: 50px;
-    justify-content: bottom;
- 
+    padding: 60px 10px;
 }
 
-.section2-title{
-    /* width: 100%; */
-        /* background-color: blue; */
-    /* margin-left: 100px; */
+.partners-title{
     height: 50px;
-    margin-bottom:auto   20px;
+    margin-bottom:auto 20px;
 }
 
-/* section3 */
+/* section instruments */
 
-.section3{
+.instruments{
     width: 55%;
-    margin:50px auto;
-    background-color: chocolate;
-    height: 800px;
+    margin:100px auto;       
 }
 
-.row3{
-    /* justify-content: center; */
+.row-instruments{
     max-width: 1000px;
-    background-color:green;
-    /* height: 1000px; */
     flex-wrap: wrap;
-    /* gap: 20px; */
-    /* align-items: center; */
+    }
 
-}
-
-.col3{
-    background-color: pink;
+.col-instruments{
     width: calc(100% / 3);
-    border:1px solid black;
-    height: 400px;
+    font-size: 0.8rem;
+    padding: 10px;
 }
 
-/* section4 */
 
-.section4{
-    max-width: 1000px;
-    background-color: blueviolet;
-    height: 200px;
-    margin: 50px auto;
+/* business section */
 
+.business-box{
+    max-width: 55%;
+    /* min-width: 1100px; */
+    margin: 50px auto;  
     
 }
+.business-box h2{
+    font-size: 2rem;
+}
 
-/* section5 */
 
-.container5{
-    background-color: lime;
-    border:1px solid black; 
+/* sponsors section */
+
+.sponsors{
     height: 400px;
 }
 
-.left-part5, 
-.center-part5,  
-.right-part5 {
-    width: calc(100% / 3);
-    border: 1px solid black;
-    height: 400px;
+.left-sponsors, 
+.center-sponsors,  
+.right-sponsors {
+width: calc(100% / 3);
+height: 400px;
 }
 
-.left-part5,
-.right-part5{
+.left-sponsors,
+.center-sponsors,
+.right-sponsors{
     flex-wrap:wrap;
 }
 
 .box{
     width:calc(100%/2);
-    height:50%;
-    border: 1px solid black;
+        height:50%;
+    /* border: 1px solid black; */
 }
 
-.bottom-part5{
-    border: 1px solid black;
-    background-color: aqua;
-    height:200px;       
+.center-sponsors{
+    background-color: rgb(246, 242, 240);
 }
 
 
-/* section6 */
+.designit{
+    background-color: rgb(166, 202, 166);
+    border: 10px solid rgb(184, 233, 184); 
+}
 
-.section6{
+.asu{
+    background-color: rgb(157, 0, 0);
+}
+
+.uflorida{
+    background-color: rgb(65, 119, 255);
+}
+
+.topps{
+    background-color: red;
+}
+
+.bicycle{
+    background-color: rgb(212, 73, 73);
+}
+.hearst{
+    background-color: rgb(32, 233, 233);
+}
+.lonely{
+    background-color: blue;
+}
+.clear{
+    background-color: rgb(208, 208, 89);
+}
+
+
+.img-sponsor{
+    filter: invert(100%);
+    padding: 60px;
+}
+
+.center-sponsors{
+    padding: 10px;
+    
+}
+
+.center-image{
+    size: 15px;
+}
+
+/* section prova */
+
+.prova{
+        /* border: 1px solid black; */
+    height:250px;
+    background-color: rgb(125, 202, 240);
+    justify-content: center;
+    align-items: center;
+    padding-top:100px;
+}
+
+.prova-main{
+    max-width: 55%;
+    margin: 0 auto;
+    /* border:1px solid black; */
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+}
+
+.prova-title{
+width: 65%;
+justify-content: center;
+}
+
+.prova-button{
+width: 35%;
+justify-content: center;
+text-align: center;
+}
+
+
+
+
+/* section questions */
+
+.questions{
     max-width: 1000px;
-    height:400px;
-    margin: 50px auto;
-    background-color: magenta;
+    /* height:500px; */
+    margin:  50px auto;
+    background-color: rgb(0, 255, 229);
     border: 1px solid black;
+    padding-top: 50px;
 
 }
 
@@ -314,21 +375,25 @@ border: 1px solid black;
 /* FOOTER */
 
 .footer{
-    background-color: grey;
+  
+    background-color: black;
     height: 400px;
+    margin-top: 50px;
 }
 
 .footer-row{
-  max-width:1100px;
+  max-width:70%;
+  padding-top: 50px;
   margin:20px auto;
-  background-color: grey;
   justify-content: center;
   
 }
 
 .footer-col{
     width: calc(100% / 5);
-    height:300px;
-    background-color: green;
-    border: 1px solid black;
+    color: white;
+    padding:30px;
+    /* background-color: green; */
+    /* border: 1px solid black; */
+    /* height:300px; */
 }
