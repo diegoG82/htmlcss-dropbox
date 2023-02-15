@@ -37,6 +37,51 @@ h1{
     margin:100px auto;
 }
 
+/* UTILITIES */
+
+.marb1{
+    margin-bottom: 1rem;
+}
+.marb2{
+    margin-bottom: 2rem;
+}
+
+.bolder{
+    font-weight: 600;
+}
+
+.blue{
+    color: blue;
+}
+
+#noborder{
+    border: none;
+}
+
+/* LAYOUT BOTTONI */
+
+.btn-blu{
+    background-color: rgb(55, 55, 246);
+    border-style: hidden;
+    padding:6px;
+    color: white;
+    margin-right: 5px;
+    display: inline-block;
+    line-height: normal;
+    text-decoration: none;
+}
+
+.btn-neutral{
+    background-color: white;
+    border:1px solid black;
+    padding:0.5rem;
+    display: inline-block;
+    line-height: normal;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+}
+
 
 /* HEADER */
 
@@ -44,17 +89,24 @@ header{
     position: relative;
     }
 
-/* sezione nav */
+/* SEZIONE NAV */
     .main-nav{
     background-color: white;
     height: 50px;
-    width: 100%;
     justify-content: space-between;
     line-height: 50px;
     text-align: center;
     position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
     z-index: 100;
     font-size: 0.7rem;
+  }
+
+  nav a{
+    text-decoration: none;
+    color: inherit;
   }
 
 /* left part header */
@@ -79,35 +131,25 @@ header{
     gap:15px;
     justify-content: right;
 }
-/* layout bottoni */
 
-.btn-blu{
-    background-color: rgb(55, 55, 246);
-    border-style: hidden;
-    padding:6px;
-    color: white;
-    margin-right: 5px;
-}
-
-.btn-neutral{
-    background-color: white;
-    border:2px solid black;
-    padding:2px;
-}
-
-/*  sezione jumbotron */
+/*  SEZIONE JUMBOTRON */
 
 .jumbotron{
     padding-top:50px;
-    height: 600px;
     margin: 0 auto;
-    background-color: rgb(125, 202, 240);
+    background-color: rgba(180, 208, 231, 1);
+}
+
+.jumbotron a{
+    text-decoration: none;
 }
 
 .jumbotron-container{
     justify-content: center;
     line-height: center;
-    padding-top: 20px;
+        /* padding-top: 20px; */
+    position:relative;
+    top:30px;
  }
 
  .jumbotron-title{
@@ -117,25 +159,25 @@ header{
  }
 
 .jumbotron-testo{
-    width: 15%;
+    width: 20%;
     font-size: 0.8rem;
-    height: 380px;
-    padding-right: 15px;
+    padding-right: 10px;
 }
 
 .arrow{
-    padding-top:70px;
+    padding-top:50px;
     font-size:2rem;
 }
 
 .jumbotron-img{
-    width:45%;
-    height:400px;
+    width:40%;
     background-image: url(../img/jumbo.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-}
+    height:320px;   
+    
+    }
 
 /* MAIN */
 
@@ -146,36 +188,65 @@ header{
     font-size: 2rem;
 }
 
+
 .row{
     justify-content: center;
     height: 600px;
     gap: 20px;
-    align-items: center;
    }
 
 .col{
-    height: 500px;
+    /* height: 500px; */
     width: calc(100% / 3 );
     border:1px solid lightgray;
 }
 
 .titolo-col{
-    height: 40px;
+    /* height: 40px; */
     text-align: center;
     line-height: 40px;
     border-bottom: 1px solid lightgray;
 }
 
 .contenuti-col{
-    line-height: 1.2rem;
+
     padding: 10px 20px 50px;
     font-size: 0.8rem;
 }
 
+.contenuti-col li{
+    position: relative;
+    padding-left: 20px;
+}
+
+.contenuti-col i{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.contenuti-col a{
+    width: 100%;
+    text-align: center;
+    /* text-decoration: none; */
+}
+
+.contenuti-col .fa-check{
+    color: blue;
+}
+
+.hrmargin{
+    width:20%;
+    margin: 30px 0;
+    color: lightgrey;
+}
+
+
 .col-bottom{
     margin-top: 50px;
-    border:1px solid black;
+    border:1px solid lightgray;
     font-size: 0.8rem;
+    line-height: 1.4rem;
 }
 
 .right-col{
@@ -187,6 +258,9 @@ header{
     width:70%
 }
 
+.bottom-content{
+    padding:1rem;
+}
 
 /* section partners */
 
@@ -219,7 +293,6 @@ header{
     font-size: 2rem;
 }
 
-
 /* sponsors section */
 
 .left-sponsors, 
@@ -236,63 +309,75 @@ height: 400px;
 }
 
 .center-sponsors{
-    background-color: rgb(246, 242, 240);
+    background-color: rgb(245, 245, 245);
 }
 
 
 .designit{
-    background-color: rgb(166, 202, 166);
-    border: 10px solid rgb(184, 233, 184); 
+    background-color: rgb(162, 211, 155);
+    border: 10px solid rgb(209, 233, 205); 
 }
 
 .asu{
-    background-color: rgb(157, 0, 0);
+    background-color: rgb(97, 8, 43);
 }
 
 .uflorida{
-    background-color: rgb(65, 119, 255);
+    background-color: rgb(0, 147, 206);
 }
 
 .topps{
-    background-color: red;
+    background-color: rgb(255, 28, 28)
 }
 
 .bicycle{
-    background-color: rgb(212, 73, 73);
+    background-color: rgb(213, 0, 31);
 }
 .hearst{
-    background-color: rgb(32, 233, 233);
+    background-color: rgb(180, 208, 231);
 }
 .lonely{
-    background-color: blue;
+    background-color: rgb(13,36,129)
 }
 .clear{
-    background-color: rgb(208, 208, 89);
+    background-color: rgb(255, 216, 48);
 }
 
+.box{
+    position: relative;
+}
 
 .img-sponsor{
     filter: invert(100%);
-    padding: 60px;
+    width: 45%;
+    position: absolute;
+    top: 50%;
+    left:50%; 
+    transform: translate(-50%, -50%);
 }
 
+.center-sponsors{
+    padding:2rem;
+}
 
 .center-image{
-transform: scale(0.5);
+width: 50%;
+}
+
+.hrsponsor{
+    width: 30%;
+    margin: 2rem 0;
 }
 
 /* section prova */
 
 .prova{
-    border: 1px solid black;
-        height:250px;
-    background-color: rgb(125, 202, 240);
-    justify-content: center;
-    align-items: center;
+    height:250px;
+    background-color: rgba(180, 208, 231, 1);
     padding-top:100px;
 }
 
-.prova-main{
+.prova-main{    
     max-width: 55%;
     margin: 0 auto;
     justify-content: space-between;
@@ -339,7 +424,7 @@ text-align: center;
   padding-top: 30px;
   margin:20px auto;
   justify-content: center; 
-  border:1px solid black;
+  /* border:1px solid black; */
   
 }
 
@@ -351,7 +436,7 @@ text-align: center;
     padding:30px;
 }
  .footer-col h3{
-    font-weight:bolder;
+    font-weight:600;
     font-size: 1.2rem;
     padding-bottom: 10px;
 }
@@ -363,4 +448,8 @@ text-align: center;
     margin:30px auto;
     font-size: 0.8rem;
     padding:30px;
+}
+
+.footer-bottom hr{
+    width:8%;
 }
