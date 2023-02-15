@@ -31,7 +31,6 @@ h1{
     font-size: 3.3rem;
 }
 .container{
-    /* border:1px solid black; */
     max-width: 55%;
     min-width: 800px;
     margin:100px auto;
@@ -61,7 +60,7 @@ h1{
 /* LAYOUT BOTTONI */
 
 .btn-blu{
-    background-color: rgb(55, 55, 246);
+    background-color: rgb(0, 97, 255);
     border-style: hidden;
     padding:6px;
     color: white;
@@ -69,6 +68,10 @@ h1{
     display: inline-block;
     line-height: normal;
     text-decoration: none;
+}
+
+.btn-blu:hover{
+    background-color: rgb(14, 37, 122);
 }
 
 .btn-neutral{
@@ -109,6 +112,10 @@ header{
     color: inherit;
   }
 
+  nav a:hover{
+    text-decoration: underline;
+  }
+
 /* left part header */
 .left-part{
     width: 40%; 
@@ -146,8 +153,6 @@ header{
 
 .jumbotron-container{
     justify-content: center;
-    line-height: center;
-        /* padding-top: 20px; */
     position:relative;
     top:30px;
  }
@@ -169,14 +174,8 @@ header{
     font-size:2rem;
 }
 
-.jumbotron-img{
-    width:40%;
-    background-image: url(../img/jumbo.png);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height:320px;   
-    
+    .jumbotron-img{
+        width: 40%; 
     }
 
 /* MAIN */
@@ -196,13 +195,11 @@ header{
    }
 
 .col{
-    /* height: 500px; */
     width: calc(100% / 3 );
     border:1px solid lightgray;
 }
 
 .titolo-col{
-    /* height: 40px; */
     text-align: center;
     line-height: 40px;
     border-bottom: 1px solid lightgray;
@@ -228,7 +225,6 @@ header{
 .contenuti-col a{
     width: 100%;
     text-align: center;
-    /* text-decoration: none; */
 }
 
 .contenuti-col .fa-check{
@@ -369,12 +365,11 @@ width: 50%;
     margin: 2rem 0;
 }
 
-/* section prova */
+/* SECTION PROVA */
 
 .prova{
-    height:250px;
     background-color: rgba(180, 208, 231, 1);
-    padding-top:100px;
+    padding:100px 0;    
 }
 
 .prova-main{    
@@ -396,6 +391,9 @@ justify-content: center;
 text-align: center;
 }
 
+.redcolor{
+    color: rgb(97, 38, 43);
+}
 
 /* section questions */
 
@@ -415,8 +413,8 @@ text-align: center;
 .footer{
     background-color: black;
     margin-top:30px;
-  
 }
+
 
 .footer-row{
   max-width:70%;
@@ -424,7 +422,6 @@ text-align: center;
   padding-top: 30px;
   margin:20px auto;
   justify-content: center; 
-  /* border:1px solid black; */
   
 }
 
